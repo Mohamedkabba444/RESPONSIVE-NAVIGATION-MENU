@@ -32,10 +32,6 @@ header {
   list-style-type: none;
 }
 
-.primary-navigation[data-visible="true"] {
-  transform: translateX(100%);
-}
-
 .primary-navigation li a {
   color: #00001a;
   text-decoration: none;
@@ -52,6 +48,10 @@ header {
     transform: translateX(0%);
     transition: transform 350ms ease-out;
   }
+
+  .primary-navigation[data-visible="false"] {
+  transform: translateX(100%);
+}
 
   .nav-toggle {
     display: block;
